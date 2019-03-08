@@ -20,7 +20,7 @@ int main() {
         m['T'] == 1 &&    // T 只能出现一次
         m.size() == 3 &&  //不能出现除了 P,A,T 之外的字符
         t - p != 1 &&     // 限定次序?
-        p * (t - p - 1) == s.length() - t - 1  //这是什么鬼 ?_?
+        p * (t - p - 1) == s.length() - t - 1  // TODO:这是什么鬼 ?_?
     )
       printf("YES\n");
     else
