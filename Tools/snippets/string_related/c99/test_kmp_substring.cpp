@@ -2,7 +2,7 @@
 #include "catch.hpp"
 
 // 引入待测试目标
-#include "../../snippets/string_related/c99/kmp_substring.c"
+#include "kmp_substring.c"
 // 引入完毕
 
 TEST_CASE("测试KMP算法", "[kmp_substring]") {
