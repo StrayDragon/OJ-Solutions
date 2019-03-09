@@ -6,7 +6,7 @@ Record the answers I have done from the online judge platform .(e.g.[PTA](https:
 - Now, Only support test them manually... :cyclone:
 - For example:
 ```bash
-$ export CPLUS_INCLUDE_PATH=<PATH-TO>/OJ/Tools/ThirdPartyLibs/SupportUTest/ # G++
+$ export CPLUS_INCLUDE_PATH=<PATH-TO>/OJ/Tools/third_party_libs/unit_test/ # G++
 $ g++ test_<TEST_NAME> # Compile single test
 $ ./a.out # Check Test Result
 ```
