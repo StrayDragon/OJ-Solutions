@@ -11,6 +11,23 @@ $ g++ test_<TEST_NAME> # Compile single test
 $ ./a.out # Check Test Result
 ```
 - Will change this way in the future, expecting!
+
+# Notes:
+- Retrive the notes(git-submodule):
+- If you haven't already pulled my repo(OJ), just use this command:
+```bash
+$ git clone https://github.com/StrayDragon/OJ.git --recursive
+```
+- Otherwise
+```bash
+git clone https://github.com/StrayDragon/OJ.git
+cd Oj
+git submodule init
+git submodule update
+```
+## Notes(submodule) list:
+- notes/ACM/ https://github.com/LittileNiQ/ACM.git
+
 # 3rd-party:
 :octocat:
 - [Catch2](https://github.com/catchorg/Catch2) : A modern, C++-native, header-only, test framework for unit-tests, TDD and BDD
