@@ -29,7 +29,7 @@ void update_height(node_t* root) {
   int lchild_height = get_height(root->lchild);
   int rchild_height = get_height(root->rchild);
   root->height =
-      1 + (lchild_height ? lchild_height > rchild_height : rchild_height);
+      1 + (lchild_height > rchild_height ? lchild_height : rchild_height);
 }
 
 void left_rotation(node_t*& root) {
