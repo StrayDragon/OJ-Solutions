@@ -79,16 +79,17 @@ void insert(node_t*& root, int data) {
     }
   }
 }
+
+node_t* create_avl_tree(int* pdata, int len) {
+  node_t* root = nullptr;
+  for (int i = 0; i < len; i++) {
+    insert(root, pdata[i]);
+  }
+  return root;
+}
+
 using namespace std;
 
 int main() {
-  node_t* root = nullptr;
-  int n, v;
-  cin >> n;
-  for (int i = 0; i < n; i++) {
-    cin >> v;
-    insert(root, v);
-  }
-  cout << root->data << endl;
   return 0;
 }
