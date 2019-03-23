@@ -1,6 +1,7 @@
 # execute
 **/*.out
 
+**/.idea
 # vscode
 .vscode
 
