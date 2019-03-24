@@ -4,9 +4,13 @@ url = "https://mirrors.aliyun.com/pypi/simple"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
+pep8 = "*"
+autopep8 = "*"
 
 [packages]
 click = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
