@@ -5,20 +5,6 @@ import string
 
 REPO_ROOT = r'/home/straydragon/GitHubRepo/OJ'
 
-supported_oj_platforms = ['PTA']
-
-
-class Language(object):
-    pass
-
-
-class Python(Language):
-    pass
-
-
-class Cpp(Language):
-    pass
-
 
 class OfflineJudge(object):
     def __init__(self, repo_root, debug=True):
@@ -28,10 +14,23 @@ class OfflineJudge(object):
 
 @click.group()
 @click.option('-t', '--target', 'repo_path', envvar='REPO_ROOT')
+@click.option('-d', '--debug', 'debug', default=True)
 @click.pass_context
 def cli(ctx, repo_path, debug):
     ctx.obj = OfflineJudge(repo_path, debug)
     pass
+
+
+@cli.command('platforms')
+def platform():
+    targets = retrieve_supported_platform()
+    # print(targets)
+    # print(os.listdir(os.path.join(REPO_ROOT, targets[-1])))
+    for target in targets:
+        for exam_set in filter(lambda d: os.path.isdir(os.path.join(REPO_ROOT, target)),
+                               os.listdir(os.path.join(REPO_ROOT, target))):
+            print(os.path.join(REPO_ROOT, target, exam_set))
+            print(os.listdir(os.path.join(REPO_ROOT, target, exam_set)))
 
 
 def retrieve_supported_platform():
@@ -39,7 +38,7 @@ def retrieve_supported_platform():
     repo_root = cwd[:cwd.find('OJ') + 2]
     dirs = os.listdir('../../')
     return list(
-        map(
+        filter(
             lambda d: os.path.join(repo_root, d),
             filter(
                 lambda d: d[0] in string.ascii_uppercase,
@@ -52,13 +51,5 @@ def retrieve_supported_platform():
     )
 
 
-def test_status():
-    pass
-
-
 if __name__ == '__main__':
-    targets = retrieve_supported_platform()
-    for target in targets:
-        for d in filter(lambda d: os.path.isdir(os.path.join(REPO_ROOT, target, d)), os.listdir(target)):
-            print(os.listdir(os.path.join(REPO_ROOT, target, d)))
-            print(os.path.join(REPO_ROOT, target, d))
+    cli()
