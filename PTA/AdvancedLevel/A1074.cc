@@ -14,6 +14,8 @@ struct Node {
 
   Node() = default;
   Node(int p, int d, int n) : pos(p), data(d), next_pos(n) {}
+
+  bool operator<(const Node& rhs) { return this->data < rhs.data; }
 } g_nodes[100005];
 
 int main() {
@@ -32,17 +34,16 @@ int main() {
   for (int it = fst_pos; it != 100004; it = g_nodes[it].next_pos)
     sorted_nodes.push_back(g_nodes[it]);
 
-  vector<Node> res;
-  int last = 0;
-  for (last = k - 1; last < n; last += k)
-    for (int i = last; i >= last / k * k; i--) res.push_back(sorted_nodes[i]);
-
-  if (last - k != n)
-    for (auto i = last - k + 1; i < n; i++) res.push_back(sorted_nodes[i]);
+  for (int i = 0; i + k <= n; i += k) {
+    auto it = begin(sorted_nodes) + i;
+    auto end = begin(sorted_nodes) + i + k;
+    std::reverse(it, end);
+  }
 
   for (int i = 0; i != n - 1; i++)
-    printf("%05d %d %05d\n", res[i].pos, res[i].data, res[i + 1].pos);
-  printf("%05d %d -1\n", res[n - 1].pos, res[n - 1].data);
+    printf("%05d %d %05d\n", sorted_nodes[i].pos, sorted_nodes[i].data,
+           sorted_nodes[i + 1].pos);
+  printf("%05d %d -1", sorted_nodes[n - 1].pos, sorted_nodes[n - 1].data);
 
   return 0;
 }
