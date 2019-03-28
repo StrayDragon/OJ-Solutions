@@ -13,17 +13,12 @@ struct TreeNode {
 int n;
 double p, r;
 
-double price, total;  // TODO:见P298
+double total = 0;
 
 int max_depth = 0;
 void dfs(int root_i, int depth) {
   if (nodes[root_i].children.size() == 0) {
-    if (depth > max_depth) {
-      max_depth = depth;
-      // cnt_depthest = 1;
-    } else if (depth == max_depth) {
-      // cnt_depthest++;
-    }
+    total += nodes[root_i].weight * p * pow(1 + r, depth);
     return;
   }
   for (int i = 0; i < nodes[root_i].children.size(); i++)
@@ -35,9 +30,9 @@ int main() {
   for (int i = 0; i < n; i++) {
     double k;
     cin >> k;
-    if (k == 0) {
+    if (k == 0) {  // 读入 retailer 销售额
       cin >> nodes[i].weight;
-    } else {
+    } else {  // 读入 distributors 或 retailers 位置
       for (int j = 0, tmp; j < k; ++j) {
         cin >> tmp;
         nodes[i].children.push_back(tmp);
@@ -46,7 +41,7 @@ int main() {
   }
 
   dfs(0, 0);
-  printf("%.1f\n", price * total);
+  printf("%.1f\n", total);
 
   return 0;
 }
