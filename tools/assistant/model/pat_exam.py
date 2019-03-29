@@ -18,7 +18,6 @@ from model import Serializable
         "problemStatus": "NO_PROBLEM_STATUS"
     },
     ...]}
-
 ('*' 号标注为需要序列化的信息)
 此外还有需要计算的量:
     *   difficulty
@@ -28,7 +27,6 @@ from model import Serializable
     *   level (甲/乙级)
     *   memory_limitation
     *   time_limitation
-        
 """
 
 
@@ -38,6 +36,21 @@ class PATExam(Serializable):
 
     def to_json(self) -> dict:
         return asdict(self)
+
+    @classmethod
+    def from_json(cls, json_obj: dict):
+        exam = cls(
+            _id=json_obj['id'],
+            label=json_obj['label'],
+            score=json_obj['score'],
+            accept_count=json_obj['acceptCount'],
+            submit_count=json_obj['submitCount'],
+            title=json_obj['title'],
+            level='甲级',  # FIXME:假的数据
+            memory_limitation=0,  # FIXME:假的数据
+            time_limitation=0,  # FIXME:假的数据
+        )
+        return exam
 
     _id: str
     label: str
