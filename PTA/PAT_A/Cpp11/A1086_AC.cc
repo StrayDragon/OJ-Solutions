@@ -1,7 +1,3 @@
-//---
-// tags:
-// categories:
-//---
 #include <functional>
 #include <iostream>
 #include <stack>
@@ -38,8 +34,7 @@ int main() {
   pre_in_to_post = [&](int i, int j, int root_i) {
     if (i <= j) {
       int index = i;
-      while (prenodes[root_i] != innodes[index])
-        index++;
+      while (prenodes[root_i] != innodes[index]) index++;
       pre_in_to_post(i, index - 1, root_i + 1);
       pre_in_to_post(index + 1, j, root_i + 1 + index - i);
       postnodes.push_back(innodes[index]);
@@ -47,8 +42,7 @@ int main() {
   };
   pre_in_to_post(0, innodes.size() - 1, 0);
 
-  if (!postnodes.empty())
-    cout << postnodes[0];
+  if (!postnodes.empty()) cout << postnodes[0];
 
   for (auto it = postnodes.begin() + 1; it != postnodes.end(); ++it)
     cout << " " << *it;

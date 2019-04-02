@@ -34,16 +34,17 @@ int main() {
   for (int it = fst_pos; it != 100004; it = g_nodes[it].next_pos)
     sorted_nodes.push_back(g_nodes[it]);
 
-  for (int i = 0; i + k <= n; i += k) {
+  int len = sorted_nodes.size();
+  for (int i = 0; i + k <= len; i += k) {
     auto it = begin(sorted_nodes) + i;
     auto end = begin(sorted_nodes) + i + k;
     std::reverse(it, end);
   }
 
-  for (int i = 0; i != n - 1; i++)
+  for (int i = 0; i != len - 1; i++)
     printf("%05d %d %05d\n", sorted_nodes[i].pos, sorted_nodes[i].data,
            sorted_nodes[i + 1].pos);
-  printf("%05d %d -1", sorted_nodes[n - 1].pos, sorted_nodes[n - 1].data);
+  printf("%05d %d -1", sorted_nodes[len - 1].pos, sorted_nodes[len - 1].data);
 
   return 0;
 }
