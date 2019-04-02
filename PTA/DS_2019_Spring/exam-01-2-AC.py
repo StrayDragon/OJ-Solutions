@@ -1,4 +1,4 @@
-def max_sub_sequence_sum_On(nums: list, length: int) -> int:
+def max_sub_sequence_sum_On(nums: list, length: int):
     max_sum = -1
     tmp_sum = 0
     begin = 0

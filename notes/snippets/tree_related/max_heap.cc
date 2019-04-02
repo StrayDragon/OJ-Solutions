@@ -24,8 +24,7 @@ void heap_down_adjust(int low, int high) {
   int j = i * 2;
 
   while (j <= high) {
-    if (j + 1 <= high && heap[j + 1] > heap[j])
-      j = j + 1;
+    if (j + 1 <= high && heap[j + 1] > heap[j]) j = j + 1;
 
     if (heap[j] > heap[i]) {
       std::swap(heap[j], heap[i]);
@@ -37,8 +36,7 @@ void heap_down_adjust(int low, int high) {
 }
 
 void heap_create() {
-  for (int i = n / 2; i >= 1; i--)
-    heap_down_adjust(i, n);
+  for (int i = n / 2; i >= 1; i--) heap_down_adjust(i, n);
 }
 
 void heap_delete_top() {

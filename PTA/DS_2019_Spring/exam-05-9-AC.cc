@@ -4,20 +4,17 @@
 void heap_down_adjust(int* heap, int parent) {
   int temp = heap[parent];
   int child = 2 * parent;
-  if (child + 1 <= heap[0] && heap[child + 1] < heap[child])
-    ++child;
+  if (child + 1 <= heap[0] && heap[child + 1] < heap[child]) ++child;
   while (child <= heap[0] && heap[child] < temp) {
     heap[parent] = heap[child];
     parent = child;
     child = 2 * parent;
-    if (child + 1 <= heap[0] && heap[child + 1] < heap[child])
-      ++child;
+    if (child + 1 <= heap[0] && heap[child + 1] < heap[child]) ++child;
   }
   heap[parent] = temp;
 }
 void make_min_heap(int* heap) {
-  for (int i = heap[0] / 2; i > 0; --i)
-    heap_down_adjust(heap, i);
+  for (int i = heap[0] / 2; i > 0; --i) heap_down_adjust(heap, i);
 }
 int heap_pop(int* heap) {
   int minElem = heap[1];
@@ -50,8 +47,7 @@ int huffman_get_wpl(int* freq) {
   return wpl;
 }
 int is_prefix(char* s1, char* s2) {
-  while (s1 && s2 && *s1 == *s2)
-    ++s1, ++s2;
+  while (s1 && s2 && *s1 == *s2) ++s1, ++s2;
   if (*s1 == '\0' || *s2 == '\0')
     return 1;
   else
@@ -60,8 +56,7 @@ int is_prefix(char* s1, char* s2) {
 int has_prefix_code(char s[][200], int n) {
   for (int i = 0; i < n; ++i)
     for (int j = i + 1; j < n; ++j)
-      if (is_prefix(s[i], s[j]))
-        return 1;
+      if (is_prefix(s[i], s[j])) return 1;
   return 0;
 }
 int main() {
