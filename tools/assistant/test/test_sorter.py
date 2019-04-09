@@ -3,8 +3,6 @@ from typing import List, Tuple
 import tempfile
 import configparser
 
-import pytest
-
 fake_c_cpp_exam_describe = r"""
 // ---
 // id = B1031
