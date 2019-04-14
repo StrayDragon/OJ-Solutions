@@ -3,17 +3,17 @@
 using namespace std;
 
 int main() {
-  int T, n, that_men = 0, case_cnt = 1;
+  int T, n, that_man = 0, case_cnt = 1;
   cin >> T;
   while (T--) {
     cin >> n;
     cout << "Case #" << case_cnt++ << ":\n";
-    for (int men, _ = 0; _ < n * 2 - 1; _++) {
-      cin >> men;
-      that_men ^= men;
+    for (int man, _ = 0; _ < n * 2 - 1; _++) {
+      cin >> man;
+      that_man ^= man;
     }
-    cout << that_men << '\n';
-    that_men = 0;
+    cout << that_man << '\n';
+    that_man = 0;
   }
   return 0;
 }
