@@ -1,5 +1,8 @@
+#include <algorithm>
+#include <cassert>
 #include <iostream>
 #include <optional>
+
 using namespace std;
 
 struct TTNode {
@@ -54,14 +57,12 @@ class TwoThreeTree {
   }
 
   std::optional<int> findHelper(TTNode* node, const int& target) {
-    if (node->valueEqual(target))
-      return target;
+    if (node->valueEqual(target)) return target;
 
     if (node->isLeaf()) {
       return {};
     } else if (node->hasTwoChildren) {
-      if (target < node->lData)
-        return findHelper(node->lChild, target);
+      if (target < node->lData) return findHelper(node->lChild, target);
       return findHelper(node->rChild, target);
     } else {
       if (target < node->lData)
@@ -74,16 +75,40 @@ class TwoThreeTree {
   }
 
   TTNode* findPreviousNode(TTNode* node, const int& target) {
-    if(node->isLeaf()){
-      
+    assert(isEmpty() == false);
+    if (node->isLeaf() && node->hasTwoChildren) {
+      return node;
     }
+    // TODO
   }
 
-  void treeSplit() {}
-  void treeFix() {}
+  void insertHelper(TTNode* node, int target) {
+    if (node->hasTwoChildren) {  //插入一个 2-结点
+      node->rData = target;
+      node->hasTwoChildren = false;  // 结点变化 2 -> 3
+      if (node->lData > node->rData) std::swap(node->lData, node->rData);
+    } else {  //插入一个 3-结点，没有父亲结点
+      if (target < node->lData) std::swap(target, node->lData);
+      if (target > node->rData) std::swap(target, node->rData);
+      // 此时target为中间值
+      node->hasTwoChildren = true;  // 结点变化 3 -> 2
+      node->lChild = new TTNode(node->lData);
+      node->rChild = new TTNode(node->rData);
+      node->lData = target;
+    }
+    // TODO
+  }
+  void treeSplit() {
+    // TODO
+  }
+
+  void treeFix() {
+    // TODO
+  }
 
  public:
   bool isEmpty() const { return root == nullptr; }
+
   bool find(int target) {
     if (isEmpty()) {
       return false;
@@ -94,8 +119,23 @@ class TwoThreeTree {
       return false;
     }
   }
-  bool insert(int target) { return false; }
-  bool remove(int target) { return false; }
+
+  bool insert(int target) {
+    // TODO
+    if (isEmpty()) {  //空树
+      root = new TTNode();
+      root->lData = target;
+    } else {
+      insertHelper(this->root, target);
+    }
+    return false;
+  }
+
+  bool remove(int target) {
+    // TODO
+    return false;
+  }
+
   void inorderTraverseAndPrint() {
     if (this->root) {
       inorderHelper(this->root);
@@ -123,15 +163,21 @@ class TwoThreeTree {
 
 int main() {
   TwoThreeTree t;
-  t.debugInitTree();
-  cout << "\n@test inorderTraverse:\n";
+  // t.debugInitTree();
+  // cout << "\n@test inorderTraverse:\n";
+  // t.inorderTraverseAndPrint();
+
+  // cout << '\n' << boolalpha;
+  // cout << "\n@test find:\n";
+  // cout << "finding 50: \t\t" << t.find(50) << '\n';
+  // cout << "finding 70: \t\t" << t.find(70) << '\n';
+  // cout << "finding 20: \t\t" << t.find(20) << '\n';
+  // cout << "finding 100: \t\t" << t.find(100) << '\n';
+  // cout << "finding 140(Nonexist): \t" << t.find(140) << '\n';
+  t.insert(6);
+  t.insert(12);
+  t.insert(2);
   t.inorderTraverseAndPrint();
-  cout << '\n' << boolalpha;
-  cout << "\n@test find:\n";
-  cout << "finding 50: \t\t" << t.find(50) << '\n';
-  cout << "finding 70: \t\t" << t.find(70) << '\n';
-  cout << "finding 20: \t\t" << t.find(20) << '\n';
-  cout << "finding 100: \t\t" << t.find(100) << '\n';
-  cout << "finding 140(Nonexist): \t" << t.find(140) << '\n';
+
   return 0;
 }
