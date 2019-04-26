@@ -12,6 +12,10 @@ class Node(object):
         self.rchild = rchild
 
     def __lt__(self, other):
+        if not self.value.startswith('_') and other.value.startswith('_'):
+            return False
+        if self.value.startswith('_') and not other.value.startswith('_'):
+            return True
         return self.feq < other.feq
 
     def __eq__(self, other):
@@ -22,7 +26,23 @@ class Node(object):
 
     @classmethod
     def dummy(cls, feq=0, lchild=None, rchild=None):
-        return cls('_', feq, lchild, rchild)
+        return cls(f'_{feq}', feq, lchild, rchild)
+
+
+def level_print(root: Node):
+    def __front(que: List[Node]) -> Node: return que[0]
+    def __pop(que): del que[0]
+    que = [root]
+    while len(que) != 0:
+        curnode: Node = __front(que)
+        __pop(que)
+        if curnode:
+            print(curnode.value, end=' ')
+        if curnode.lchild:
+            que.append(curnode.lchild)
+        if curnode.rchild:
+            que.append(curnode.rchild)
+    print()
 
 
 def get_wpl(weight_nodes: List[int]) -> int:
@@ -47,7 +67,7 @@ def get_wpl(weight_nodes: List[int]) -> int:
     return wpl
 
 
-def huffman_encode(target: str) -> str:
+def huffman_encode(target: str, *, flip=False) -> str:
 
     def convert_to_weight_tuples(targets: str) -> List[Tuple[str, int]]:
         table = {}
@@ -68,6 +88,7 @@ def huffman_encode(target: str) -> str:
             left = heappop(heap)
             right = heappop(heap)
             top = Node.dummy(left.feq+right.feq, lchild=left, rchild=right)
+            print(left.value, right.value, top.value)
             heappush(heap, top)
         result, DUMMY = {}, Node.dummy()
 
@@ -79,15 +100,17 @@ def huffman_encode(target: str) -> str:
                 result[curnode.value] = code
             __huffman_code_helper(curnode.lchild, code+'0')
             __huffman_code_helper(curnode.rchild, code+'1')
-        __huffman_code_helper(heap[0], '0')
+        level_print(heap[0])
+        __huffman_code_helper(heap[0], '')
 
         return result
 
     char_freqs = convert_to_weight_tuples(target)
+    print(char_freqs)
     code_table = get_huffman_code(char_freqs)
-    # debug.pprint(code_table)
+    debug.pprint(code_table)
     coded = (code_table[ch] for ch in target)
-    return "".join(coded)
+    return "".join(map(lambda i: '0' if i == '1' else '1', coded)) if flip else "".join(coded)
 
 
 def huffman_decode(huffman_code: str) -> str:
