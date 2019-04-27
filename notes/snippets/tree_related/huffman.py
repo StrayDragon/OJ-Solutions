@@ -1,10 +1,32 @@
 from pprint import PrettyPrinter
 from typing import List, Tuple, Dict
 
-debug = PrettyPrinter(indent=4)
+
+def get_wpl(weight_nodes: List[int]) -> int:
+    """获取哈弗曼树的WPL(Weighted Path Length).
+
+    Arguments:
+        weight_nodes {List[int]} -- 权重结点
+
+    Returns:
+        int -- 计算出的WPL值
+    """
+    from heapq import heapify, heappop, heappush
+    wpl: int = 0
+    heap: List[int] = weight_nodes[:]
+    heapify(heap)
+    while len(heap) >= 2:
+        min1 = heappop(heap)
+        min2 = heappop(heap)
+        this_sum = min1 + min2
+        heappush(heap, this_sum)
+        wpl += this_sum
+    return wpl
 
 
-class Node(object):
+class _Node(object):
+    """特化用于表示Huffman树的结点"""
+
     def __init__(self, value, feq, lchild=None, rchild=None):
         self.value = value
         self.feq = feq
@@ -29,13 +51,19 @@ class Node(object):
         return cls(f'_{feq}', feq, lchild, rchild)
 
 
-def level_print(root: Node):
-    def __front(que: List[Node]) -> Node: return que[0]
-    def __pop(que): del que[0]
-    que = [root]
+debug = PrettyPrinter(indent=2)
+
+
+def _level_print(root: _Node):
+    """层序遍历并打印结点value
+
+    Arguments:
+        root {_Node} -- 根
+    """
+    from collections import deque
+    que = deque([root])
     while len(que) != 0:
-        curnode: Node = __front(que)
-        __pop(que)
+        curnode: _Node = que.popleft()
         if curnode:
             print(curnode.value, end=' ')
         if curnode.lchild:
@@ -45,83 +73,99 @@ def level_print(root: Node):
     print()
 
 
-def get_wpl(weight_nodes: List[int]) -> int:
-    """获取哈弗曼树的WPL(Weighted Path Length).
+def _convert_to_weight_tuples(targets: str, *, reverse=False) -> List[Tuple[str, int]]:
+    """将指定字符串转换为排序好频率列表
 
     Arguments:
-        weight_nodes {List[int]} -- 权重结点
+        targets {str} -- 待编码字符串
+
+    Keyword Arguments:
+        reverse {bool} -- 是否反转排序(升序)结果 (default: {False})
 
     Returns:
-        int -- 计算出的WPL值
+        List[Tuple[str, int]] -- [(字符,字符频率)...]
     """
-    from heapq import heapify, heappop, heappush
-    wpl: int = 0
-    heap: List[int] = weight_nodes[:]
-    heapify(heap)
+    table = {}
+    for c in targets:
+        if c not in table:
+            table[c] = 1
+        else:
+            table[c] += 1
+    result = sorted(list(table.items()), key=lambda k: k[1], reverse=False)
+    return result
+
+
+def _get_huffman_code(char_freqs: List[Tuple[str, int]]) -> Dict[str, str]:
+    """获取字符-字符编码表
+
+    Arguments:
+        char_freqs {List[Tuple[str, int]]} -- 字符-字符频率列表
+
+    Returns:
+        Dict[str, str] -- 字符-字符编码表
+    """
+    from heapq import heappush, heappop
+    heap = []
+    for char, freq in char_freqs:
+        heappush(heap, _Node(char, freq))
     while len(heap) >= 2:
-        min1 = heappop(heap)
-        min2 = heappop(heap)
-        this_sum = min1 + min2
-        heappush(heap, this_sum)
-        wpl += this_sum
-    return wpl
+        left = heappop(heap)
+        right = heappop(heap)
+        top = _Node.dummy(left.feq+right.feq, lchild=left, rchild=right)
+        print(left.value, right.value, top.value)
+        heappush(heap, top)
+    result, DUMMY = {}, _Node.dummy()
+
+    def __huffman_code_helper(curnode: _Node, code: str):
+        if curnode == None:
+            return
+        if curnode != DUMMY:
+            # print(curnode.value)
+            result[curnode.value] = code
+        __huffman_code_helper(curnode.lchild, code+'0')
+        __huffman_code_helper(curnode.rchild, code+'1')
+    _level_print(heap[0])
+    __huffman_code_helper(heap[0], '')
+
+    return result
 
 
 def huffman_encode(target: str, *, flip=False) -> str:
+    """对指定字符串进行Huffman编码
+    ```
+            root
+          0/    \\1   # -- 编码 (默认为向左子树编码0,向右子树编码1)
+       lchild   rchild
+       . . .     . . .
+    ```
+    Arguments:
+        target {str} -- 待编码字符串
 
-    def convert_to_weight_tuples(targets: str) -> List[Tuple[str, int]]:
-        table = {}
-        for c in targets:
-            if c not in table:
-                table[c] = 1
-            else:
-                table[c] += 1
-        result = sorted(list(table.items()), key=lambda k: k[1])
-        return result
+    Keyword Arguments:
+        flip {bool} --  是否翻转编码串(default: {False})
 
-    def get_huffman_code(char_freqs: List[Tuple[str, int]]) -> Dict[str, str]:
-        from heapq import heappush, heappop
-        heap = []
-        for char, freq in char_freqs:
-            heappush(heap, Node(char, freq))
-        while len(heap) >= 2:
-            left = heappop(heap)
-            right = heappop(heap)
-            top = Node.dummy(left.feq+right.feq, lchild=left, rchild=right)
-            print(left.value, right.value, top.value)
-            heappush(heap, top)
-        result, DUMMY = {}, Node.dummy()
+    Returns:
+        str -- 编码后只包含0|1的字符串
+    """
 
-        def __huffman_code_helper(curnode: Node, code: str):
-            if curnode == None:
-                return
-            if curnode != DUMMY:
-                # print(curnode.value)
-                result[curnode.value] = code
-            __huffman_code_helper(curnode.lchild, code+'0')
-            __huffman_code_helper(curnode.rchild, code+'1')
-        level_print(heap[0])
-        __huffman_code_helper(heap[0], '')
-
-        return result
-
-    char_freqs = convert_to_weight_tuples(target)
+    char_freqs = _convert_to_weight_tuples(target)
     print(char_freqs)
-    code_table = get_huffman_code(char_freqs)
+    code_table = _get_huffman_code(char_freqs)
     debug.pprint(code_table)
     coded = (code_table[ch] for ch in target)
     return "".join(map(lambda i: '0' if i == '1' else '1', coded)) if flip else "".join(coded)
 
 
 def huffman_decode(huffman_code: str) -> str:
+    # TODO:还差这个实现,这个暂时延后,大概需要算法支持
     return ''
 
 
 def main():
-    weight_nodes = [6, 1, 2, 2, 3]
-    print(get_wpl.__name__, get_wpl(weight_nodes))
     s = 'AAABBACCCDEEA'
     print(huffman_encode.__name__, huffman_encode(s))
+    weight_nodes = [5, 3, 2, 2, 1]
+    print(get_wpl.__name__, get_wpl(weight_nodes))
 
 
 if __name__ == "__main__":
