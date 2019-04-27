@@ -112,7 +112,7 @@ def _get_huffman_code(char_freqs: List[Tuple[str, int]]) -> Dict[str, str]:
         left = heappop(heap)
         right = heappop(heap)
         top = _Node.dummy(left.feq+right.feq, lchild=left, rchild=right)
-        print(left.value, right.value, top.value)
+        # print(left.value, right.value, top.value)
         heappush(heap, top)
     result, DUMMY = {}, _Node.dummy()
 
@@ -124,12 +124,13 @@ def _get_huffman_code(char_freqs: List[Tuple[str, int]]) -> Dict[str, str]:
             result[curnode.value] = code
         __huffman_code_helper(curnode.lchild, code+'0')
         __huffman_code_helper(curnode.rchild, code+'1')
-    _level_print(heap[0])
+    # _level_print(heap[0])
     __huffman_code_helper(heap[0], '')
 
     return result
 
 
+# 1 FIXME:一个隐患,若flip=True,则相应的decode会失效
 def huffman_encode(target: str, *, flip=False) -> str:
     """对指定字符串进行Huffman编码
     ```
@@ -142,30 +143,57 @@ def huffman_encode(target: str, *, flip=False) -> str:
         target {str} -- 待编码字符串
 
     Keyword Arguments:
-        flip {bool} --  是否翻转编码串(default: {False})
+        flip {bool} --  是否翻转编码串(default: {False}) 
+        # 1 FIXME: 此参数有缺陷,若不decode则可用
 
     Returns:
         str -- 编码后只包含0|1的字符串
     """
 
     char_freqs = _convert_to_weight_tuples(target)
-    print(char_freqs)
+    # print(char_freqs)
     code_table = _get_huffman_code(char_freqs)
-    debug.pprint(code_table)
+    # debug.pprint(code_table)
     coded = (code_table[ch] for ch in target)
     return "".join(map(lambda i: '0' if i == '1' else '1', coded)) if flip else "".join(coded)
 
 
-def huffman_decode(huffman_code: str) -> str:
-    # TODO:还差这个实现,这个暂时延后,大概需要算法支持
-    return ''
+# 1 FIXME:
+def huffman_decode(huffman_code: str, code_dict: dict) -> str:
+    """对指定Huffman编码(0|1码)解码
+
+    Arguments:
+        huffman_code {str} -- Huffman编码后的0|1串
+        code_dict {dict} -- 指定串的每个字符到(0|1)编码的映射关系
+
+    Returns:
+        str -- 解码结果
+    """
+
+    origin_dict = {v: k
+                   for k, v in code_dict.items()
+                   if not k.startswith('_')}
+    # debug.pprint(origin_dict)
+    decoded = ""
+    t = ''
+    for bit in huffman_code:
+        t += bit
+        if t in origin_dict:
+            decoded += origin_dict[t]
+            t = ''
+        else:
+            continue
+    return decoded
 
 
 def main():
     s = 'AAABBACCCDEEA'
-    print(huffman_encode.__name__, huffman_encode(s))
+    print("original string:\n", s)
+    print(f"{huffman_encode.__name__}:\n", huffman_encode(s))
     weight_nodes = [5, 3, 2, 2, 1]
-    print(get_wpl.__name__, get_wpl(weight_nodes))
+    print(f"{get_wpl.__name__}:\n", get_wpl(weight_nodes))
+    print(f"{huffman_decode.__name__}:\n", huffman_decode(huffman_encode(s),
+                                                          _get_huffman_code(_convert_to_weight_tuples(s))))
 
 
 if __name__ == "__main__":
