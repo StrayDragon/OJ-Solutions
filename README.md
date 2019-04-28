@@ -1,4 +1,7 @@
-# OJ
+# OJ 
+**WARNING** 
+- State:   :construction:  
+
 Record the answers I have done from the online judge platform .(e.g.[PTA](https://pintia.cn/),[LeetCode](https://leetcode.com/),[CodeWar](http://www.codewars.com)...)
 
 ## How to test snippets ?
@@ -25,9 +28,36 @@ cd Oj
 git submodule init
 git submodule update
 ```
+
 ## Notes(submodule) list:
 - notes/ACM/ https://github.com/LittileNiQ/ACM.git
+
+# Project structure
+```md
+ *THIS_REPO*
+      │
+      ├── PTA/                  # [ZJU-PTA](https://pintia.cn/)
+      │   ├── DS_2019_Spring/   # [ZJU-MOOC](https://www.icourse163.org/learn/ZJU-93001#/learn/announce)
+      │   ├── PAT_A/            # [PAT_Advanced](https://pintia.cn/problem-sets/994805342720868352)
+      │   │   ├── Cpp11/
+      │   │   └── Python3/
+      │   └── PAT_B/            # [PAT_Advanced](https://pintia.cn/problem-sets/994805260223102976/problems/type/7)
+      │       ├── Cpp11/
+      │       └── Python3/
+      ├── notes/                # My Notes extracted from these exams
+      │   ├── ACM@
+      │   └── snippets/
+      │       ├── cpp/
+      │       └── py/
+      ├── tools/                # Helper Scripts for this project 
+      │   ├── assistant/
+      │   └── third_party_libs/
+      ├── unstable/
+      ├── LICENSE
+      └── README.md
+```
 
 # 3rd-party:
 :octocat:
 - [Catch2](https://github.com/catchorg/Catch2) : A modern, C++-native, header-only, test framework for unit-tests, TDD and BDD
+
