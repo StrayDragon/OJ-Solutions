@@ -1,3 +1,6 @@
+# remove temporarily
+tools/third_party_libs/unit_test/catch.hpp
+
 # execute
 **/*.out
 
