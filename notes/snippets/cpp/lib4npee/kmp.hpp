@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 
 namespace npee {
@@ -32,4 +34,4 @@ int KMP(std::string str, std::string substr, int next[]) {
 }
 
 }  // namespace ch4
-};  // namespace npee
+}  // namespace npee
