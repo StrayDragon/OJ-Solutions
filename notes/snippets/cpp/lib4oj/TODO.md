@@ -28,6 +28,9 @@
 - [ ] *container*::copy
 - [ ] *container*::erase
 
+## 字符串
+- [ ] string::substr
+
 # 迭代器相关 <iterator>
 - [ ] std::prev, std::next
 - [ ] std::begin, std::end

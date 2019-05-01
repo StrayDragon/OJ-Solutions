@@ -22,7 +22,7 @@ $ ./a.out # Check Test Result
       │   ├── PAT_A/            # [PAT_Advanced](https://pintia.cn/problem-sets/994805342720868352)
       │   │   ├── Cpp11/
       │   │   └── Python3/
-      │   └── PAT_B/            # [PAT_Advanced](https://pintia.cn/problem-sets/994805260223102976/problems/type/7)
+      │   └── PAT_B/            # [PAT_Basic](https://pintia.cn/problem-sets/994805260223102976/problems/type/7)
       │       ├── Cpp11/
       │       └── Python3/
       ├── notes/                # My Notes extracted from these exams
