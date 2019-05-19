@@ -1,5 +1,5 @@
 import pytest
-from timer import Timer
+from .timer import Timer
 
 
 def countdown(n):
