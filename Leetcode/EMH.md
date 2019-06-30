@@ -1,0 +1,5 @@
+# <YOUR-LANGUAGE-1>
+## <PASS-TIME> pass
+```<LANAGUAGE>
+<SOLUTION>
+```
