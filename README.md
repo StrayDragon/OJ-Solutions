@@ -17,6 +17,7 @@ $ ./a.out # Check Test Result
 ```
  *THIS_REPO*
       │
+      ├── Leetcode/             # [Leetcode](https://leetcode-cn.com/)
       ├── PTA/                  # [ZJU-PTA](https://pintia.cn/)
       │   ├── DS_2019_Spring/   # [ZJU-MOOC](https://www.icourse163.org/learn/ZJU-93001#/learn/announce)
       │   ├── PAT_A/            # [PAT_Advanced](https://pintia.cn/problem-sets/994805342720868352)
@@ -35,7 +36,7 @@ $ ./a.out # Check Test Result
       │   └── third_party_libs/
       ├── unstable/
       ├── LICENSE
-      └── README.md
+      └── README
 ```
 
 # Notes:
