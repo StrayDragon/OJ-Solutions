@@ -40,7 +40,7 @@ $ ./a.out # Check Test Result
 ```
 
 # Notes:
-- Retrive the notes(git-submodule):
+- Retrieve the notes(git-submodule):
 - If you haven't already pulled my repo(OJ), just use this command:
 ```bash
 $ git clone https://github.com/StrayDragon/OJ.git --recursive

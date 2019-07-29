@@ -10,7 +10,7 @@ const int MAXN = 100010;
 int elements[MAXN];
 int n;
 
-void ioput_helper(function<void()> sort_fn) {
+void input_helper(function<void()> sort_fn) {
   scanf("%d", &n);
   for (int i = 0; i < n; i++)
     scanf("%d", &elements[i]);
@@ -46,6 +46,6 @@ void std_priority_queue_solution() {
 }
 
 int main() {
-  ioput_helper(std_stable_sort_solution);
+  input_helper(std_stable_sort_solution);
   return 0;
 }
