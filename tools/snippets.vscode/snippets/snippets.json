@@ -1,0 +1,17 @@
+{
+  "OJ problems infomation": {
+    "prefix": "ojdoc-pat-header",
+    "body": [
+      "$LINE_COMMENT ---",
+      "$LINE_COMMENT id         : ${TM_FILENAME_BASE/_.*//gi}",
+      "$LINE_COMMENT title      : $1",
+      "$LINE_COMMENT tag        : $2",
+      "$LINE_COMMENT difficulty : $3",
+      "$LINE_COMMENT status     : $4",
+      "$LINE_COMMENT from       : $5",
+      "$LINE_COMMENT ---",
+      "$0"
+    ],
+    "description": ""
+  }
+}
