@@ -1,8 +1,9 @@
 {
     "name": "oj-snippets",
     "displayName": "oj-snippets",
-    "description": "",
+    "description": "A vscode extension to provide some comments for problem solutions",
     "version": "0.0.1",
+    "publisher": "straydragon",
     "engines": {
         "vscode": "^1.36.0"
     },
