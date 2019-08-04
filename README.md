@@ -42,8 +42,8 @@ $ ./a.out # Check Test Result
 
 # Tools:
 ## OJ-snippets
-- A vscode snippets extension for support the exams some common comments 
-### Install 
+- A vscode extension to provide some comments for problem solutions
+### Install
 - Copy this directory(`oj-snippets/`) to your vscode extensions folder and reload vscode, The location of extensions folder(Default):
   - Windows %USERPROFILE%\.vscode\extensions
   - macOS ~/.vscode/extensions
@@ -55,7 +55,7 @@ $ ./a.out # Check Test Result
 ### Uninstall
 - Just delete this directory(`oj-snippets/`) in your vscode extensions folder and reload vscode.
 
-## `assistant/` 
+## Assistant
 - Some internal scripts for enhance coding experience
 
 

@@ -1,6 +1,17 @@
 # oj-snippets
+- A vscode extension to provide some comments for problem solutions
 
-# Support snippets
+## Pack to vsix
+- You need install the `vsce` (From nodejs package)
+```
+$ npm install vsce -g
+```
+- And, pack this extension:
+```
+$ vsce package
+```
+
+## Supported snippets
 
 |prefix|description|support Languages|
 |:-:|:-:|:-:|
