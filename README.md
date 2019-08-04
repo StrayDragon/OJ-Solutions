@@ -13,6 +13,7 @@ $ g++ test_<TEST_NAME> # Compile single test
 $ ./a.out # Check Test Result
 ```
 - Will change this way in the future, expecting! -->
+
 # Project structure
 ```
  *THIS_REPO*
@@ -33,11 +34,30 @@ $ ./a.out # Check Test Result
       │       └── py/
       ├── tools/                # Helper Scripts for this project 
       │   ├── assistant/
-      │   └── third_party_libs/
+      │   └── oj-snippets/
       ├── unstable/
       ├── LICENSE
       └── README
 ```
+
+# Tools:
+## OJ-snippets
+- A vscode snippets extension for support the exams some common comments 
+### Install 
+- Copy this directory(`oj-snippets/`) to your vscode extensions folder and reload vscode, The location of extensions folder(Default):
+  - Windows %USERPROFILE%\.vscode\extensions
+  - macOS ~/.vscode/extensions
+  - Linux ~/.vscode/extensions
+
+- Now your can use some snippets to note some exams information:
+  - [learn more](tools/oj-snippets/README.md)
+
+### Uninstall
+- Just delete this directory(`oj-snippets/`) in your vscode extensions folder and reload vscode.
+
+## `assistant/` 
+- Some internal scripts for enhance coding experience
+
 
 # Notes:
 - Retrieve the notes(git-submodule):
