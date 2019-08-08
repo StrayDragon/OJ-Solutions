@@ -1,3 +1,14 @@
+// ---
+// id         : A1034
+// title      : Head of a Gang
+// difficulty : Hard
+// score      : 30
+// tag        : Graph
+// keyword    : DFS
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <map>
 #include <string>
@@ -23,14 +34,12 @@ bool visited[MAXN] = {false};
 void dfs(int now_visit, int& head, int& amount_of_members, int& total_weight) {
   amount_of_members++;
   visited[now_visit] = true;
-  if (weight[now_visit] > weight[head])
-    head = now_visit;
+  if (weight[now_visit] > weight[head]) head = now_visit;
   for (int i = 0; i < amount_of_people; i++) {
     if (graph[now_visit][i] > 0) {
       total_weight += graph[now_visit][i];
       graph[now_visit][i] = graph[i][now_visit] = 0;
-      if (visited[i] == false)
-        dfs(i, head, amount_of_members, total_weight);
+      if (visited[i] == false) dfs(i, head, amount_of_members, total_weight);
     }
   }
 }
