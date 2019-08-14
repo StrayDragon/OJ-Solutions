@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-#include "kmp.h"
+#include "kmp.hpp"
 
 #define ALL(x, n) begin(x), begin(x) + (n)
 
