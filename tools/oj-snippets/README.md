@@ -8,7 +8,7 @@ $ npm install vsce -g
 ```
 - And, pack this extension:
 ```
-$ vsce package
+$ vsce package -o build/oj-snippets-latest.vsix
 ```
 
 ## Supported snippets
