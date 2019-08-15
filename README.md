@@ -22,17 +22,12 @@ $ ./a.out # Check Test Result
       ├── PTA/                  # [ZJU-PTA](https://pintia.cn/)
       │   ├── DS_2019_Spring/   # [ZJU-MOOC](https://www.icourse163.org/learn/ZJU-93001#/learn/announce)
       │   ├── PAT_A/            # [PAT_Advanced](https://pintia.cn/problem-sets/994805342720868352)
-      │   │   ├── Cpp11/
-      │   │   └── Python3/
       │   └── PAT_B/            # [PAT_Basic](https://pintia.cn/problem-sets/994805260223102976/problems/type/7)
-      │       ├── Cpp11/
-      │       └── Python3/
       ├── notes/                # My Notes extracted from these exams
-      │   ├── ACM@
-      │   └── snippets/
-      │       ├── cpp/
-      │       └── py/
-      ├── tools/                # Helper Scripts for this project 
+      │   ├── ACM@              # external nice repo: https://github.com/LittileNiQ/ACM.git
+      │   ├── PAT_A             # summary data of preparing PAT-A examination
+      │   └── recipes/          # code snippets and templates
+      ├── tools/                # helper scripts for this project 
       │   ├── assistant/
       │   └── oj-snippets/
       ├── unstable/
