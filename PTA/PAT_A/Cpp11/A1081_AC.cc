@@ -1,3 +1,14 @@
+// ---
+// id         : 1081
+// title      : Rational Sum
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <sstream>
 #include <string>

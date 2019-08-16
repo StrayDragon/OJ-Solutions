@@ -1,3 +1,14 @@
+// ---
+// id         : 1104
+// title      : Sum of Number Segments
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cstdio>
 
 using namespace std;

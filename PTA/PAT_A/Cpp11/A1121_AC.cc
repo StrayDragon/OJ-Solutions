@@ -1,3 +1,14 @@
+// ---
+// id         : 1121
+// title      : Damn Single
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <cstdio>
 #include <unordered_set>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1077
+// title      : Kuchiguse
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // 易错测试点;
 // - case: 混用 std::cin 与 std::getline 的坑会误读换行符等
 // - case: 有n行输入,但每行都只有0或1个字符

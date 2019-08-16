@@ -1,3 +1,14 @@
+// ---
+// id         : 1093
+// title      : Count PAT's
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <string>
 using namespace std;

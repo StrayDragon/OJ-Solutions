@@ -1,3 +1,14 @@
+// ---
+// id         : 1023
+// title      : Have Fun with Numbers
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <deque>
 #include <iostream>
 #include <string>

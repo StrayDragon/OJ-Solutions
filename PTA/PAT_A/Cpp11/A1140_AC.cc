@@ -1,3 +1,14 @@
+// ---
+// id         : 1140
+// title      : Look-and-say Sequence
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <string>
 

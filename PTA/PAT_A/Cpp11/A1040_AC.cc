@@ -1,3 +1,14 @@
+// ---
+// id         : 1040
+// title      : Longest Symmetric String
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // reference: https://www.liuchuo.net/archives/2104
 
 #include <iostream>

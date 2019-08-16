@@ -1,3 +1,14 @@
+// ---
+// id         : 1088
+// title      : Rational Arithmetic
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // refer : https://www.liuchuo.net/archives/1906
 
 #include <cmath>

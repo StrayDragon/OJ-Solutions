@@ -1,3 +1,14 @@
+// ---
+// id         : 1025
+// title      : PAT Ranking
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <cstdio>
 #include <iostream>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1071
+// title      : Speech Patterns
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <cctype>
 #include <iostream>

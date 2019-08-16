@@ -1,3 +1,14 @@
+// ---
+// id         : 1102
+// title      : Invert a Binary Tree
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <functional>
 #include <iostream>

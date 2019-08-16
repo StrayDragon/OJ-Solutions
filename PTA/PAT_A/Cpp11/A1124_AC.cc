@@ -1,3 +1,14 @@
+// ---
+// id         : 1124
+// title      : Raffle for Weibo Followers
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <iterator>
 #include <string>

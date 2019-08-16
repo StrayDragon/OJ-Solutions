@@ -1,3 +1,14 @@
+// ---
+// id         : 1105
+// title      : Spiral Matrix
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // reference: https://www.liuchuo.net/archives/2073
 
 #include <algorithm>

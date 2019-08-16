@@ -1,3 +1,14 @@
+// ---
+// id         : 1068
+// title      : Find More Coins
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 

@@ -1,3 +1,14 @@
+// ---
+// id         : 1031
+// title      : Hello World for U
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <string>
 using namespace std;

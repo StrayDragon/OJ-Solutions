@@ -1,3 +1,14 @@
+// ---
+// id         : 1112
+// title      : Stucked Keyboard
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // reference :https://www.liuchuo.net/archives/2075
 
 #include <cstdio>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1041
+// title      : Be Unique
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 
 static const auto __ = []() {

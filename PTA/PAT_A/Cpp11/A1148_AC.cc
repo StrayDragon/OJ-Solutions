@@ -1,3 +1,14 @@
+// ---
+// id         : 1148
+// title      : Werewolf - Simple Version
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // reference: https://blog.csdn.net/liuchuo/article/details/82560876
 
 #include <cmath>

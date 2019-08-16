@@ -1,3 +1,14 @@
+// ---
+// id         : 1128
+// title      : N Queens Puzzle
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cmath>
 #include <iostream>
 #include <vector>

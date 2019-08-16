@@ -1,3 +1,14 @@
+// ---
+// id         : 1152
+// title      : Google Recruitment
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cmath>
 #include <iostream>
 #include <string>

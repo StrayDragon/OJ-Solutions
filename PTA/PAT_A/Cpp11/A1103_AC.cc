@@ -1,3 +1,14 @@
+// ---
+// id         : 1103
+// title      : Integer Factorization
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cmath>
 #include <iostream>
 #include <vector>

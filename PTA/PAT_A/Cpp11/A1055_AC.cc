@@ -1,3 +1,14 @@
+// ---
+// id         : 1055
+// title      : The World's Richest
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <array>
 #include <iostream>

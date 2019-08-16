@@ -1,3 +1,14 @@
+// ---
+// id         : 1065
+// title      : A+B and C (64bit)
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 
 using namespace std;

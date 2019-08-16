@@ -1,3 +1,14 @@
+// ---
+// id         : 1052
+// title      : Linked List Sorting
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <cstdio>
 using namespace std;

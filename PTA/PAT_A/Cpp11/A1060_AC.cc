@@ -1,3 +1,14 @@
+// ---
+// id         : 1060
+// title      : Are They Equal
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <string>
 

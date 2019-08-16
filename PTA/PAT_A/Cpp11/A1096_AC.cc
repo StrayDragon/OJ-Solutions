@@ -1,3 +1,14 @@
+// ---
+// id         : 1096
+// title      : Consecutive Factors
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // 参考: https://blog.csdn.net/liuchuo/article/details/52139124
 
 #include <cmath>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1099
+// title      : Build A Binary Search Tree
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <queue>

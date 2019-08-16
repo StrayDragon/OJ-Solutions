@@ -1,3 +1,14 @@
+// ---
+// id         : 1110
+// title      : Complete Binary Tree
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <queue>

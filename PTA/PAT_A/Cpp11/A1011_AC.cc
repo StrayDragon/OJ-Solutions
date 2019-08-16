@@ -1,3 +1,14 @@
+// ---
+// id         : 1011
+// title      : World Cup Betting
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cstdio>
 
 using namespace std;

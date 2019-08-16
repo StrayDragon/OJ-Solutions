@@ -1,3 +1,14 @@
+// ---
+// id         : 1132
+// title      : Cut Integer
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cmath>
 #include <iostream>
 

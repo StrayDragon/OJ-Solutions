@@ -1,3 +1,14 @@
+// ---
+// id         : 1087
+// title      : All Roads Lead to Rome
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <string>

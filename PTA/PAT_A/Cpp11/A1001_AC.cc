@@ -1,3 +1,14 @@
+// ---
+// id         : 1001
+// title      : A+B Format
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <iterator>
 #include <string>

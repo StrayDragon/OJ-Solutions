@@ -1,3 +1,14 @@
+// ---
+// id         : 1007
+// title      : Maximum Subsequence Sum
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 
 using namespace std;

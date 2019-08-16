@@ -1,3 +1,14 @@
+// ---
+// id         : 1016
+// title      : Phone Bills
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <functional>
 #include <iomanip>

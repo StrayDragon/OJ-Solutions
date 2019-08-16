@@ -1,3 +1,14 @@
+// ---
+// id         : 1108
+// title      : Finding Average
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // reference: https://www.liuchuo.net/archives/1924
 
 #include <cstdio>

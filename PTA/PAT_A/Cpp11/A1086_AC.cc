@@ -1,3 +1,14 @@
+// ---
+// id         : 1086
+// title      : Tree Traversals Again
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <functional>
 #include <iostream>
 #include <stack>

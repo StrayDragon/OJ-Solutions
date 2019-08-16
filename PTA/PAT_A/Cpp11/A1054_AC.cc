@@ -1,3 +1,14 @@
+// ---
+// id         : 1054
+// title      : The Dominant Color
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <unordered_map>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1006
+// title      : Sign In and Sign Out
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <string>

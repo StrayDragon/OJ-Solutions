@@ -1,3 +1,14 @@
+// ---
+// id         : 1012
+// title      : The Best Rank
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <string>

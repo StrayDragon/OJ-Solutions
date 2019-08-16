@@ -1,3 +1,14 @@
+// ---
+// id         : 1009
+// title      : Product of Polynomials
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iomanip>
 #include <iostream>
 #include <utility>

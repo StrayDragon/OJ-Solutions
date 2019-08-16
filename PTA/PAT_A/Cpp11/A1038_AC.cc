@@ -1,3 +1,14 @@
+// ---
+// id         : 1038
+// title      : Recover the Smallest Number
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <string>

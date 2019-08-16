@@ -1,4 +1,15 @@
 // ---
+// id         : 1076
+// title      : Forwards on Weibo
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
+// ---
 // id         : A1076
 // title      : Forwards on Weibo
 // difficulty : Hard

@@ -1,3 +1,14 @@
+// ---
+// id         : 1049
+// title      : Counting Ones
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 
 using namespace std;

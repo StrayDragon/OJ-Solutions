@@ -1,3 +1,14 @@
+// ---
+// id         : 1106
+// title      : Lowest Price in Supply Chain
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cmath>
 #include <iostream>
 #include <vector>

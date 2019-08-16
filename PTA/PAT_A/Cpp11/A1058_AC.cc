@@ -1,3 +1,14 @@
+// ---
+// id         : 1058
+// title      : A+B in Hogwarts
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cstdio>
 
 using namespace std;

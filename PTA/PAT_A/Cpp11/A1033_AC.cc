@@ -1,3 +1,14 @@
+// ---
+// id         : 1033
+// title      : To Fill or Not to Fill
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

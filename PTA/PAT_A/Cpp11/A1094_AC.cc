@@ -1,3 +1,14 @@
+// ---
+// id         : 1094
+// title      : The Largest Generation
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <vector>
 

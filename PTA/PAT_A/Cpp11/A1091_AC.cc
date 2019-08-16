@@ -1,3 +1,14 @@
+// ---
+// id         : 1091
+// title      : Acute Stroke
+// difficulty : Hard
+// score      : 30
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <iostream>
 #include <queue>
 

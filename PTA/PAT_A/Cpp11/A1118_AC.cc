@@ -1,3 +1,14 @@
+// ---
+// id         : 1118
+// title      : Birds in Forest
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 /// need c++14
 
 #include <iostream>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1042
+// title      : Shuffling Machine
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <array>
 #include <iostream>
 #include <vector>

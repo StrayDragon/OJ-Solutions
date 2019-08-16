@@ -1,3 +1,14 @@
+// ---
+// id         : 1067
+// title      : Sort with Swap(0, i)
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cstdio>
 #include <map>
 using namespace std;

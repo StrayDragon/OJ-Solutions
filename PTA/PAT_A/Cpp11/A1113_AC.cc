@@ -1,3 +1,14 @@
+// ---
+// id         : 1113
+// title      : Integer Set Partition
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // reference: https://www.liuchuo.net/archives/2299
 
 #include <algorithm>

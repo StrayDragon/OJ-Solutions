@@ -1,3 +1,14 @@
+// ---
+// id         : 1116
+// title      : Come on! Let's C
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <cmath>
 #include <iostream>
 #include <string>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1036
+// title      : Boys vs Girls
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <iostream>
 #include <string>

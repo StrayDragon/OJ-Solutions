@@ -1,3 +1,14 @@
+// ---
+// id         : 1039
+// title      : Course List for Student
+// difficulty : Medium
+// score      : 25
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 #include <algorithm>
 #include <cstdio>
 #include <iostream>

@@ -1,3 +1,14 @@
+// ---
+// id         : 1046
+// title      : Shortest Distance
+// difficulty : Easy
+// score      : 20
+// tag        : TODO
+// keyword    : TODO
+// status     : AC
+// from       : PAT (Advanced Level) Practice
+// ---
+
 // 参考: https://www.liuchuo.net/archives/2021
 // 贪心?动态规划?
 
