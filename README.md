@@ -1,6 +1,8 @@
-# OJ 
+# <p align="center"> OJ </p>
+
 Record the answers I have done from the online judge platform .(e.g.[PTA](https://pintia.cn/),[LeetCode](https://leetcode.com/),[CodeWar](http://www.codewars.com)...)
 
+---
 **WARNING** 
 - State: Still on :construction:, update daily as much as possible!
 <!-- ## How to test snippets ?
@@ -14,7 +16,7 @@ $ ./a.out # Check Test Result
 ```
 - Will change this way in the future, expecting! -->
 
-# Project structure
+## Project structure
 ```
  *THIS_REPO*
       │
@@ -35,7 +37,7 @@ $ ./a.out # Check Test Result
       └── README
 ```
 
-# Tools:
+# :triangular_ruler: Tools:
 ## OJ-snippets
 - A vscode extension to provide some comments for problem solutions
 ### Install
@@ -54,7 +56,7 @@ $ ./a.out # Check Test Result
 - Some internal scripts for enhance coding experience
 
 
-# Notes:
+# :pencil2: Notes:
 - Retrieve the notes(git-submodule):
 - If you haven't already pulled my repo(OJ), just use this command:
 ```bash
@@ -76,3 +78,5 @@ git submodule update
 :octocat:
 - [Catch2](https://github.com/catchorg/Catch2) : A modern, C++-native, header-only, test framework for unit-tests, TDD and BDD
  -->
+# :cookie: Food
+- (中文) [OI-Wiki](https://oi-wiki.org/)
