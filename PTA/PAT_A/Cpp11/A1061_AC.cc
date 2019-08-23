@@ -3,8 +3,8 @@
 // title      : Dating
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : conversion; find
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

@@ -3,14 +3,12 @@
 // title      : Shortest Distance
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : symmetry problem
 // status     : AC
 // from       : PAT (Advanced Level) Practice
+// reference  : https://www.liuchuo.net/archives/2021
 // ---
-
-// 参考: https://www.liuchuo.net/archives/2021
-// 贪心?动态规划?
 
 #include <algorithm>
 #include <cstdio>
@@ -21,29 +19,6 @@ const int MAXN = 100010;
 int d[MAXN];
 
 int main() {
-  // int n;
-  // scanf("%d", &n);
-  // for (int i = 1; i <= n; i++)
-  //   scanf("%d", &d[i]);
-  // int m;
-  // scanf("%d", &m);
-  // for (int s, e, sum, rsum; m--;) {
-  //   scanf("%d %d", &s, &e);
-  //   int left = std::min(s, e);
-  //   int right = std::max(s, e);
-  //   sum = rsum = 0;
-  //   for (int i = left; i != right; i++)
-  //     sum += d[i];
-
-  //   for (int i = left - 1;; i--) {
-  //     if (i == 0)
-  //       i = n;
-  //     rsum += d[i];
-  //     if (i == right)
-  //       break;
-  //   }
-  //   printf("%d\n", std::min(sum, rsum));
-  // }
   int n;
   scanf("%d", &n);
   int sum = 0;

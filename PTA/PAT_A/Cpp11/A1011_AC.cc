@@ -3,8 +3,8 @@
 // title      : World Cup Betting
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : 
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

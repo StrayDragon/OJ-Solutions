@@ -3,8 +3,8 @@
 // title      : Spell It Right
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : string; number accuracy
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

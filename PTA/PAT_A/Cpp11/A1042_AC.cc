@@ -3,50 +3,41 @@
 // title      : Shuffling Machine
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : mapping relationship; sort
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
 
-#include <array>
 #include <iostream>
 #include <vector>
 using namespace std;
 int main() {
   vector<string> cards{""};
-  auto sort_cards = [&] {
-    array<string, 4> color{"S", "H", "C", "D"};
-    for (int _ = 0; _ < 4; _++)
-      for (int i = 1; i <= 13; i++)
-        cards.push_back(color[_] + to_string(i));
-    cards.push_back("J1");
-    cards.push_back("J2");
-  };
-  sort_cards();
-
+  string color[]{"S", "H", "C", "D"};
+  for (int _ = 0; _ < 4; _++)
+    for (int i = 1; i <= 13; i++) cards.push_back(color[_] + to_string(i));
+  cards.push_back("J1");
+  cards.push_back("J2");
   vector<string> record(cards);
-  vector<int> shufflings;
+
   int k;
   cin >> k;
+  vector<int> next_pos_seq;
+  for (int next_pos; cin >> next_pos;) next_pos_seq.push_back(next_pos);
 
-  int next_pos;
-  while (cin >> next_pos)
-    shufflings.push_back(next_pos);
-    
-  while (k != 0) {
+  while (k--) {
     int i = 1;
-    for (auto&& next_pos : shufflings) {
+    for (auto&& next_pos : next_pos_seq) {
       record[next_pos] = cards[i];
       i++;
     }
     cards = record;
-    k--;
   }
 
-  cout << record[1];
-
-  for (auto it = record.begin() + 2; it != record.end(); ++it)
-    cout << " " << *it;
+  for (int i = 1, len = record.size(); i <= len - 1; i++) {
+    cout << record[i];
+    if (i < len - 1) cout << " ";
+  }
   return 0;
 }

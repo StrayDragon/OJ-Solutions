@@ -3,8 +3,8 @@
 // title      : Read Number in Chinese
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : string; lexical analysis; two pointer
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

@@ -3,23 +3,25 @@
 // title      : Sign In and Sign Out
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : minimax
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
 
 #include <algorithm>
 #include <iostream>
+#include <iterator>
 #include <string>
 #include <vector>
 
 using namespace std;
-#define ALL(x) (x).begin(), (x).end()
+#define ALL(x) begin(x), end(x)
 
 struct Time {
   int hour, minute, second;
 };
+
 bool operator<(const Time& my, const Time& other) {
   return (my.hour != other.hour)
              ? my.hour < other.hour
@@ -33,7 +35,7 @@ istream& operator>>(istream& in, Time& time) {
 }
 
 struct Person {
-  string id_number;
+  string id;
   Time signin_time, signout_time;
 };
 
@@ -42,7 +44,7 @@ int main() {
   cin >> n;
   vector<Person> persons;
   for (Person t; n--;) {
-    cin >> t.id_number >> t.signin_time >> t.signout_time;
+    cin >> t.id >> t.signin_time >> t.signout_time;
     persons.push_back(t);
   }
 
@@ -56,7 +58,7 @@ int main() {
         return lhs.signout_time < rhs.signout_time;
       });
 
-  cout << unlockitr->id_number << " " << lockitr->id_number << '\n';
+  cout << unlockitr->id << " " << lockitr->id << '\n';
 
   return 0;
 }

@@ -3,8 +3,8 @@
 // title      : Kuchiguse
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : string; suffix
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

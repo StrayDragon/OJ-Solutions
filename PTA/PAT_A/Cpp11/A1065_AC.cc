@@ -3,8 +3,8 @@
 // title      : A+B and C (64bit)
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : number accuracy
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
@@ -20,12 +20,12 @@ int main() {
   for (int case_cnt = 1; case_cnt <= n; case_cnt++) {
     cin >> a >> b >> c;
     bool flag;  // true 为正溢出 ,false 为负溢出,
-    long long sumab = a + b;
-    if (a > 0 && b > 0 && sumab < 0)
+    long long sum = a + b;
+    if (a > 0 && b > 0 && sum < 0)
       flag = true;
-    else if (a < 0 && b < 0 && sumab >= 0)
+    else if (a < 0 && b < 0 && sum >= 0)
       flag = false;
-    else if (sumab > c)
+    else if (sum > c)
       flag = true;
     else
       flag = false;

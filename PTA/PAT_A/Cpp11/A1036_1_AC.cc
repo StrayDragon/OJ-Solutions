@@ -1,10 +1,10 @@
 // ---
-// id         : 1036
+// id         : 1036_1
 // title      : Boys vs Girls
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : minimax
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
@@ -13,15 +13,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
 using namespace std;
-#define ALL(x) x.begin(), x.end()
+
+#define ALL(x) begin(x), end(x)
+
 struct Student {
   string name;
   char gender;
   string id;
   int grade;
-
   bool operator<(const Student& other) { return grade < other.grade; }
 };
 

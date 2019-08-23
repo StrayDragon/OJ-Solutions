@@ -3,8 +3,8 @@
 // title      : A+B Format
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : string; conversion
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

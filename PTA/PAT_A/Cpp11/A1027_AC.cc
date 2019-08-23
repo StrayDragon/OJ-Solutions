@@ -3,8 +3,8 @@
 // title      : Colors in Mars
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : conversion
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

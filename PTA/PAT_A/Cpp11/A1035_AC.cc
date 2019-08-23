@@ -3,8 +3,8 @@
 // title      : Password
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Simple Simulation
+// keyword    : string
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
