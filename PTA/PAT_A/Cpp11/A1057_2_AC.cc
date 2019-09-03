@@ -1,5 +1,5 @@
 // ---
-// id         : 1057
+// id         : 1057_2
 // title      : Stack
 // difficulty : Hard
 // score      : 30
