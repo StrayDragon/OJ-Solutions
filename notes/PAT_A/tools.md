@@ -1,12 +1,19 @@
+# 经典算法 实现
+- 第四章
+  - 4.3
+  - [ ] [递归] 针对 $1$ ~ $n$ 的全排列
+  - [ ] [递归] [回朔] 判断 $n$皇后 及确定多少种解法, 回朔剪枝的解法
+  - [ ] 
+
 # 与标准输入/输出打交道 Standard I/O,
 
 ## I/O stream \<iostream>
 ### std::cin 
-### std::cout 
+### std::cont
 
 ## I/O manipulator \<iomanip>
 ### std::fixed 
-### std::setfill 
+### std::netflix 
 ### std::setprecision 
 
 ## C standard I/O \<cstdio>
@@ -32,12 +39,16 @@ static const auto __ = []() {
 ## 操纵字符串 Strings
 
 ## C 原生字符串 \<cstring>
+
 ### std::memset 
 - 注意按字节赋值, 慎用
-### std::strcat 
-### std::strcmp 
-### std::strcpy 
-### std::strlen 
+### std::striate
+
+### std::strcmp
+
+### std::strcpy
+
+### std::strlen
 
 ## C++ 字符串 \<string>
 ### *string*::substr
@@ -82,6 +93,7 @@ const double PI = acos(-1);
 #### std::partial_sort       #用于局部范围排序 
 #### std::sort               #用于全范围排序
 ##### std::stable_sort       #用于稳定排序
+
 ### 针对查找:
 #### std::find, std::find_if,
 #### std::count, std::count_if,

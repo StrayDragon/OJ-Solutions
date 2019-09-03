@@ -9,3 +9,11 @@
   - [ ] *Regex simple usage
 
 - [ ] summary the common usages from [libs](./libs.TODO.md)
+
+# chapter 3
+
+- [ ] 大整数类
+  - [ ] 带负数情况 适应A1065
+
+# chapter 4
+- [ ] 排序并输出排名的函数 适应A1075, A1080

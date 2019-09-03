@@ -1,0 +1,23 @@
+PAT
+- Categories:
+  - TODO
+  - Simple Simulation
+  - Primary Algorithm
+
+- keyword:
+  - TODO
+  - draw
+  - string
+  - greedy
+  - two pointers
+  - sort
+  - cache optimization
+  - symmetry problem
+  - conversion
+  - binary
+  - number accuracy
+  - mapping relationship
+  - math::
+    - polynomial plus
+    - polynomial multiplication
+    - minimax
