@@ -3,8 +3,8 @@
 // title      : Talent and Virtue
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : sort
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
@@ -50,19 +50,17 @@ int main() {
     // Filter the smallmen:
     // that is, only the ones whose grades of talent and virtue are both not
     // below this line will be ranked;
-    if (guy.virtue < l || guy.talent < l)
-      continue;
+    if (guy.virtue < l || guy.talent < l) continue;
 
     // that is, those with both grades **not below** this line(h) are considered
     // as the "sages"
-    if (guy.virtue >= h && guy.talent >= h)
-      sages.push_back(guy);
-    // Those with talent grades **below** h but virtue grades not are cosidered as
-    // the "noblemen"
+    if (guy.virtue >= h && guy.talent >= h) sages.push_back(guy);
+    // Those with talent grades **below** h but virtue grades not are cosidered
+    // as the "noblemen"
     else if (guy.talent < h && guy.virtue >= h)
       noblemen.push_back(guy);
-    // Those with **both** grades **below** h, but with virtue **not lower** than talent are
-    // considered as the "fool men"
+    // Those with **both** grades **below** h, but with virtue **not lower**
+    // than talent are considered as the "fool men"
     else if (guy.talent < h && guy.virtue < h && guy.virtue >= guy.talent)
       foolmen.push_back(guy);
     // The rest of people whose grades both pass the L line are ranked after the

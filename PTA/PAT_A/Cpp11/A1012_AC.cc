@@ -3,8 +3,8 @@
 // title      : The Best Rank
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : sort; number accuracy
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

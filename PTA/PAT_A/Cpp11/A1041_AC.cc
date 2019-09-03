@@ -3,8 +3,8 @@
 // title      : Be Unique
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : hash;
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

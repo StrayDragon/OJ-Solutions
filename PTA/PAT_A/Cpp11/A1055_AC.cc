@@ -3,8 +3,8 @@
 // title      : The World's Richest
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : sort; cache optimization
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

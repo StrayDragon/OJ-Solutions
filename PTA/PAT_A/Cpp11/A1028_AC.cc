@@ -3,8 +3,8 @@
 // title      : List Sorting
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : sort
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
@@ -26,9 +26,7 @@ struct Record {
   string name;
 };
 
-bool policy1(const Record& lhs, const Record& rhs) {
-  return lhs.id < rhs.id;
-}
+bool policy1(const Record& lhs, const Record& rhs) { return lhs.id < rhs.id; }
 
 bool policy2(const Record& lhs, const Record& rhs) {
   return (lhs.name == rhs.name) ? lhs.id < rhs.id : lhs.name < rhs.name;

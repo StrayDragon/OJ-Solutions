@@ -3,8 +3,8 @@
 // title      : Count PAT's
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    :
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

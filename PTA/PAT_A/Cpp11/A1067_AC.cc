@@ -3,8 +3,8 @@
 // title      : Sort with Swap(0, i)
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : greedy
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

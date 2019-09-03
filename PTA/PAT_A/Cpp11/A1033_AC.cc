@@ -3,8 +3,8 @@
 // title      : To Fill or Not to Fill
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : greedy
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
@@ -39,8 +39,8 @@ int main() {
     for (; cur < n;) {
       int lowest_price_station = -1;
       double min_p = 1234567890;
-      for (int i = cur + 1;
-           i <= n && stations[i].d - stations[cur].d <= max_d; i++) {
+      for (int i = cur + 1; i <= n && stations[i].d - stations[cur].d <= max_d;
+           i++) {
         if (stations[i].p < min_p) {
           min_p = stations[i].p;
           lowest_price_station = i;
@@ -48,8 +48,7 @@ int main() {
         }
       }
       if (lowest_price_station == -1) break;
-      double need =
-          (stations[lowest_price_station].d - stations[cur].d) / davg;
+      double need = (stations[lowest_price_station].d - stations[cur].d) / davg;
       if (min_p < stations[cur].p) {
         if (cur_tank < need) {
           total_price += (need - cur_tank) * stations[cur].p;
@@ -66,8 +65,7 @@ int main() {
     if (cur == n) {
       printf("%.2f\n", total_price);
     } else {
-      printf("The maximum travel distance = %.2f\n",
-             stations[cur].d + max_d);
+      printf("The maximum travel distance = %.2f\n", stations[cur].d + max_d);
     }
   }
 

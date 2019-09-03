@@ -3,8 +3,8 @@
 // title      : Shopping in Mars
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : dichotomy
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

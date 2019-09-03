@@ -3,8 +3,8 @@
 // title      : To Buy or Not to Buy
 // difficulty : Easy
 // score      : 20
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : string; find
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

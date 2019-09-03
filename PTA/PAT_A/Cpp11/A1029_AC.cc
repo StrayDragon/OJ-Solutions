@@ -3,8 +3,8 @@
 // title      : Median
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : two pointers
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
@@ -21,8 +21,7 @@ int main() {
   int n1, n2;
 
   scanf("%d", &n1);
-  for (int i = 0; i < n1; i++)
-    scanf("%d", &seq[i]);
+  for (int i = 0; i < n1; i++) scanf("%d", &seq[i]);
   seq[n1] = INT32_MAX;
 
   scanf("%d", &n2);

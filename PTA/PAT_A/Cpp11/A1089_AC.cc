@@ -3,8 +3,8 @@
 // title      : Insert or Merge
 // difficulty : Medium
 // score      : 25
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : two pointers
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

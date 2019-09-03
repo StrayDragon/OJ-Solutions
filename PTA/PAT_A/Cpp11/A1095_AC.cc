@@ -3,8 +3,8 @@
 // title      : Cars on Campus
 // difficulty : Hard
 // score      : 30
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : sort; find
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---

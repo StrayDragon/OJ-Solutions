@@ -3,8 +3,8 @@
 // title      : Graduate Admission
 // difficulty : Hard
 // score      : 30
-// tag        : TODO
-// keyword    : TODO
+// tag        : Primary Algorithm
+// keyword    : sort
 // status     : AC
 // from       : PAT (Advanced Level) Practice
 // ---
